@@ -114,10 +114,10 @@ return packer.startup(function(use)
     -- misc
     use "ThePrimeagen/harpoon"
     use "mbbill/undotree"
-    use "tpope/vim-fugitive"
     use "RRethy/vim-illuminate"
     use "JoosepAlviste/nvim-ts-context-commentstring"
     use "lewis6991/gitsigns.nvim"
+    use "windwp/nvim-autopairs"
     use {
         'numToStr/Comment.nvim',
         config = function()

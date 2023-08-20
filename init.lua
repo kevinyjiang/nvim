@@ -6,4 +6,4 @@ require('kevim.cmp')
 require('kevim.dashboard')
 require('kevim.toggleterm')
 require('kevim.lualine')
-
+require('kevim.autopairs')
