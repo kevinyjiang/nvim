@@ -128,6 +128,7 @@ return packer.startup(function(use)
     use "JoosepAlviste/nvim-ts-context-commentstring"
     use "lewis6991/gitsigns.nvim"
     use "windwp/nvim-autopairs"
+    use "michaelb/vim-tips"
     use {
         'numToStr/Comment.nvim',
         config = function()

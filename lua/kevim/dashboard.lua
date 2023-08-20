@@ -15,6 +15,8 @@ vim.g.dashboard_default_executive = "telescope"
 local dynamic_header = vim.fn.winheight(0) > 18 and header_art or {"",""}
 local db = require("dashboard")
 
+vim.cmd [[runtime plugin/vim-tips.vim]]
+local tip = vim.fn.GetTip()
 
 db.setup({
   theme = "doom",
@@ -70,6 +72,6 @@ db.setup({
         action = "q!"
       },
     },
-    footer = {}
+    footer = {tip}
   }
 })
