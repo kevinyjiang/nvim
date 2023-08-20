@@ -9,7 +9,7 @@ vim.g.maplocalleader = " "
 -- open left side file explorer
 map("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 map("n", "<leader>ls", ":NvimTreeFindFile<cr>", opts)
-
+map("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()", opts)
 -- tab through buffers
 map("n", "<S-l>", ":bnext<cr>", opts)
 map("n", "<S-h>", ":bprevious<cr>", opts)

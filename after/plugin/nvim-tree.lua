@@ -11,17 +11,16 @@ require("nvim-tree").setup({
         custom = { ".git", "*.meta", ".DS_Store" },
     },
     view = {
-        width = 30,
+        width = 35,
         side = "left",
         signcolumn = "no",
         hide_root_folder = false,
-        relativenumber = true,
     },
     renderer = {
         indent_width = 2,
         indent_markers = {
             enable = true,
-            inline_arrows = false;
+            inline_arrows = true;
         },
         icons = {
             webdev_colors = true,

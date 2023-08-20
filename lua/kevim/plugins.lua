@@ -81,6 +81,18 @@ return packer.startup(function(use)
         requires = { { "nvim-treesitter/nvim-treesitter" } }
     }
 
+    -- terminal
+    use { "akinsho/toggleterm.nvim", tag = '*' }
+
+    -- status bar
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = {
+            'nvim-tree/nvim-web-devicons',
+            opt = true
+        },
+    }
+
     -- file tree
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
