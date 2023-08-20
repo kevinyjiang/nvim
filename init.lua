@@ -7,3 +7,5 @@ require('kevim.dashboard')
 require('kevim.toggleterm')
 require('kevim.lualine')
 require('kevim.autopairs')
+require('kevim.whichkey')
+

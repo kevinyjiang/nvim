@@ -107,6 +107,16 @@ return packer.startup(function(use)
         'glepnir/dashboard-nvim',
         requires = {'nvim-tree/nvim-web-devicons'}
     }
+
+    -- shortcut hints
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end
+    }
+
     -- colorschemes
     use "folke/tokyonight.nvim"
     use { "catppuccin/nvim", as = "catppuccin" }
