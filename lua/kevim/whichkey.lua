@@ -83,21 +83,21 @@ local mappings = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "buffers",
   },
-  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["q"] = { "<cmd>q!<CR>", "Quit" },
-  ["c"] = { "<cmd>bdelete!<CR>", "close Buffer" },
+  ["e"] = { "<cmd>NvimTreeToggle<cr>", "explorer" },
+  ["q"] = { "<cmd>q!<CR>", "quit" },
+  ["c"] = { "<cmd>bdelete!<CR>", "close" },
   ["h"] = { "<cmd>nohlsearch<CR>", "highlight off" },
-  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Live Grep" },
-  ["P"] = { "<cmd>lua require('harpoon.cmd-ui').toggle_quick_menu()<cr>", "HarPoon" },
-
-  p = {
-    name = "Packer",
-    c = { "<cmd>PackerCompile<cr>", "Compile" },
-    i = { "<cmd>PackerInstall<cr>", "Install" },
-    s = { "<cmd>PackerSync<cr>", "Sync" },
-    S = { "<cmd>PackerStatus<cr>", "Status" },
-    u = { "<cmd>PackerUpdate<cr>", "Update" },
-  },
+  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "grep" },
+  ["P"] = { "<cmd>lua require('harpoon.cmd-ui').toggle_quick_menu()<cr>", "harpoon" },
+  ["?"] = { "<cmd>Telescope help_tags<cr>", "help" },
+  --[[ p = { ]]
+  --[[   name = "Packer", ]]
+  --[[   c = { "<cmd>PackerCompile<cr>", "Compile" }, ]]
+  --[[   i = { "<cmd>PackerInstall<cr>", "Install" }, ]]
+  --[[   s = { "<cmd>PackerSync<cr>", "Sync" }, ]]
+  --[[   S = { "<cmd>PackerStatus<cr>", "Status" }, ]]
+  --[[   u = { "<cmd>PackerUpdate<cr>", "Update" }, ]]
+  --[[ }, ]]
 
   --[[ g = { ]]
   --[[   name = "Git", ]]
@@ -123,11 +123,11 @@ local mappings = {
   --[[ }, ]]
 
   l = {
-    name = "LSP",
+    name = "lsp",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-    f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
+    --[[ f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" }, ]]
     i = { "<cmd>LspInfo<cr>", "Info" },
-    l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
+    --[[ l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" }, ]]
     r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = {
@@ -136,10 +136,9 @@ local mappings = {
     },
   },
   s = {
-    name = "See more",
+    name = "more",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
-    h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     R = { "<cmd>Telescope registers<cr>", "Registers" },
@@ -148,13 +147,13 @@ local mappings = {
   },
 
   t = {
-    name = "Terminal",
-    n = { "<cmd>lua _NODE_TOGGLE()<cr>", "node" },
-    u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "ncdu" },
-    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "htop" },
-    j = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "python" },
+    name = "terminal",
+    --[[ n = { "<cmd>lua _NODE_TOGGLE()<cr>", "node" }, ]]
+    --[[ u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "ncdu" }, ]]
+    --[[ t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "htop" }, ]]
+    --[[ j = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "python" }, ]]
     f = { "<cmd>ToggleTerm direction=float<cr>", "floating window" },
-    h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "horizontal split" },
+    s = { "<cmd>ToggleTerm size=20 direction=horizontal<cr>", "horizontal split" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "vertical split" },
   },
 }

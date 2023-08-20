@@ -10,9 +10,11 @@ vim.g.maplocalleader = " "
 map("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 map("n", "<leader>ls", ":NvimTreeFindFile<cr>", opts)
 map("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
-map("n", "<leader>h", ":lua _HTOP_TOGGLE()<cr>", opts)
-map("n", "<leader>j", ":lua _PYTHON_TOGGLE()<cr>", opts)
-map("n", "<leader>n", ":lua _NODE_TOGGLE()<cr>", opts)
+
+map("n", "<C-j>", "<C-w>j", opts)
+map("n", "<C-k>", "<C-w>k", opts)
+map("n", "<C-h>", "<C-w>h", opts)
+map("n", "<C-l>", "<C-w>l", opts)
 
 -- tab through buffers
 map("n", "<S-l>", ":bnext<cr>", opts)
@@ -43,7 +45,7 @@ map("n", "J", "mzJ`z", opts)
 map("n", "<C-d>", "<C-d>zz", opts)
 map("n", "<C-u>", "<C-u>zz", opts)
 
-map("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { noremap = true, silent = false })
+--[[ map("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { noremap = true, silent = false }) ]]
 
 -- reload config
-map("n", "<leader><leader>", ":so %<cr>", {})
+map("n", "<leader><leader>", ":lua require'kevim.utils'.reload_config()<cr>", opts)

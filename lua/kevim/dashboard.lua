@@ -16,12 +16,14 @@ local dynamic_header = vim.fn.winheight(0) > 18 and header_art or {"",""}
 local db = require("dashboard")
 
 vim.cmd [[runtime plugin/vim-tips.vim]]
-local tip = vim.fn.GetTip()
 
 db.setup({
   theme = "doom",
   config = {
     header = dynamic_header,
+    --[[ week_header = { ]]
+    --[[     enable = true, ]]
+    --[[ }, ]]
     center = {
       {
         icon = "  ",
@@ -72,6 +74,5 @@ db.setup({
         action = "q!"
       },
     },
-    footer = {tip}
   }
 })

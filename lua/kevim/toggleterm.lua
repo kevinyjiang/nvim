@@ -10,7 +10,7 @@ toggleterm.setup({
 	shade_filetypes = {},
 	shade_terminals = true,
 	shading_factor = 2,
-	start_in_insert = false,
+	start_in_insert = true,
 	insert_mappings = true,
 	persist_size = true,
     --[[ direction = "float", ]]
@@ -45,26 +45,26 @@ function _LAZYGIT_TOGGLE()
 	lazygit:toggle()
 end
 
-local node = Terminal:new({ direction="float", cmd = "node", hidden = true })
-
-function _NODE_TOGGLE()
-	node:toggle()
-end
-
-local ncdu = Terminal:new({ cmd = "ncdu --color dark", hidden = true })
-
-function _NCDU_TOGGLE()
-	ncdu:toggle()
-end
-
-local htop = Terminal:new({ cmd = "htop", hidden = true })
-
-function _HTOP_TOGGLE()
-	htop:toggle()
-end
-
-local python = Terminal:new({ direction = "float", cmd = "python3", hidden = true })
-
-function _PYTHON_TOGGLE()
-	python:toggle()
-end
+--[[ local node = Terminal:new({ direction="float", cmd = "node", hidden = true }) ]]
+--[[]]
+--[[ function _NODE_TOGGLE() ]]
+--[[ 	node:toggle() ]]
+--[[ end ]]
+--[[]]
+--[[ local ncdu = Terminal:new({ direction="float", cmd = "ncdu --color dark", hidden = true }) ]]
+--[[]]
+--[[ function _NCDU_TOGGLE() ]]
+--[[ 	ncdu:toggle() ]]
+--[[ end ]]
+--[[]]
+--[[ local htop = Terminal:new({ direction="float", cmd = "htop", hidden = true }) ]]
+--[[]]
+--[[ function _HTOP_TOGGLE() ]]
+--[[ 	htop:toggle() ]]
+--[[ end ]]
+--[[]]
+--[[ local python = Terminal:new({ direction = "float", cmd = "python3", hidden = true }) ]]
+--[[]]
+--[[ function _PYTHON_TOGGLE() ]]
+--[[ 	python:toggle() ]]
+--[[ end ]]

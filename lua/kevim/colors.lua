@@ -1,4 +1,3 @@
-local C = require("catppuccin.palettes").get_palette()
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
@@ -22,7 +21,7 @@ require("catppuccin").setup({
         all = function (colors)
             return {
                 DashboardHeader = { fg = "#6A85E4" },
-                DashboardFooter = { fg = colors.yellow, style = { "italic" } },
+                DashboardFooter = { fg = colors.green, style = { "italic" } },
                 DashboardIcon = { fg = "#d65c6e" },
                 DashboardShortCut = { fg = "#4A55B9" },
                 DashboardDesc = { fg = "#7BCCFC"  },
