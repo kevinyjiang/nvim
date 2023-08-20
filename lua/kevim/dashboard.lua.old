@@ -1,0 +1,64 @@
+local custom = {
+ "",
+ "",
+ "",
+ " ███╗   ██╗ ██╗   ██╗ ██╗ ███╗   ███╗",
+ " ████╗  ██║ ██║   ██║ ██║ ████╗ ████║",
+ " ██╔██╗ ██║ ██║   ██║ ██║ ██╔████╔██║",
+ " ██║╚██╗██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║",
+ " ██║ ╚████║  ╚████╔╝  ██║ ██║ ╚═╝ ██║",
+ " ╚═╝  ╚═══╝   ╚═══╝   ╚═╝ ╚═╝     ╚═╝",
+ "",
+ "",
+}
+
+vim.g.dashboard_default_executive = "telescope"
+
+local db = require("dashboard")
+
+db.setup({
+  theme = "doom",
+  shortcut_type = "letter",
+  config = {
+    header = custom,
+    center = {
+      {
+        icon = "  ",
+        desc = "new",
+        key = "e",
+        action = ":enew"
+      },
+      {
+        icon = "  ",
+        desc = "search",
+        key = "<C-p>",
+        action = "Telescope find_files theme=ivy"
+      },
+      {
+        icon = "  ",
+        desc = "recent",
+        key = "<C-r>",
+        action = "Telescope oldfiles theme=dropdown"
+      },
+      {
+        icon = "  ",
+        desc = "grep",
+        key = "<C-F>",
+        action = "Telescope live_grep"
+      },
+      {
+        icon = "󰒓  ",
+        desc = "config",
+        key = "c",
+        action = "edit ~/.config/nvim/init.lua"
+      },
+      {
+        icon = "󰅖  ",
+        desc = "quit",
+        key = "q",
+        action = "q!"
+      },
+    },
+    footer = {}
+  }
+})
