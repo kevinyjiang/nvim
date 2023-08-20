@@ -11,6 +11,8 @@ map("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 map("n", "<leader>ls", ":NvimTreeFindFile<cr>", opts)
 map("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
 map("n", "<leader>h", ":lua _HTOP_TOGGLE()<cr>", opts)
+map("n", "<leader>j", ":lua _PYTHON_TOGGLE()<cr>", opts)
+map("n", "<leader>n", ":lua _NODE_TOGGLE()<cr>", opts)
 
 -- tab through buffers
 map("n", "<S-l>", ":bnext<cr>", opts)

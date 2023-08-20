@@ -51,7 +51,7 @@ function _NODE_TOGGLE()
 	node:toggle()
 end
 
-local ncdu = Terminal:new({ cmd = "ncdu", hidden = true })
+local ncdu = Terminal:new({ cmd = "ncdu --color dark", hidden = true })
 
 function _NCDU_TOGGLE()
 	ncdu:toggle()
@@ -63,7 +63,7 @@ function _HTOP_TOGGLE()
 	htop:toggle()
 end
 
-local python = Terminal:new({ cmd = "python", hidden = true })
+local python = Terminal:new({ direction = "float", cmd = "python3", hidden = true })
 
 function _PYTHON_TOGGLE()
 	python:toggle()
