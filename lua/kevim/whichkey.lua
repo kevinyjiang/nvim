@@ -91,6 +91,7 @@ local mappings = {
   ["<tab>"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "harpoon" },
   ["P"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "pin" },
   ["?"] = { "<cmd>Telescope help_tags<cr>", "help" },
+  ["m"] = { "<cmd>MinimapToggle<cr>", "minimap" },
   --[[ p = { ]]
   --[[   name = "Packer", ]]
   --[[   c = { "<cmd>PackerCompile<cr>", "Compile" }, ]]
