@@ -88,8 +88,8 @@ local mappings = {
   ["c"] = { "<cmd>bdelete!<CR>", "close" },
   ["h"] = { "<cmd>nohlsearch<CR>", "highlight off" },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "grep" },
-  ["P"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "harpoon" },
-  ["a"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "add to harpoon" },
+  ["<tab>"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "harpoon" },
+  ["P"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "pin" },
   ["?"] = { "<cmd>Telescope help_tags<cr>", "help" },
   --[[ p = { ]]
   --[[   name = "Packer", ]]
