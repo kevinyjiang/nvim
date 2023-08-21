@@ -130,6 +130,7 @@ return packer.startup(function(use)
     use "windwp/nvim-autopairs"
     use "michaelb/vim-tips"
     use "wfxr/minimap.vim"
+    use "ThePrimeagen/vim-be-good"
     use {
         'numToStr/Comment.nvim',
         config = function()
