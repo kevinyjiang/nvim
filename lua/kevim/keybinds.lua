@@ -6,10 +6,11 @@ map("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- open left side file explorer
 map("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-map("n", "<leader>ls", ":NvimTreeFindFile<cr>", opts)
+--[[ map("n", "<leader>ls", ":NvimTreeFindFile<cr>", opts) ]]
 map("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
+map("n", "<leader>m", ":MinimapToggle<cr>", opts)
+
 
 map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-k>", "<C-w>k", opts)

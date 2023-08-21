@@ -129,6 +129,7 @@ return packer.startup(function(use)
     use "lewis6991/gitsigns.nvim"
     use "windwp/nvim-autopairs"
     use "michaelb/vim-tips"
+    use "wfxr/minimap.vim"
     use {
         'numToStr/Comment.nvim',
         config = function()
