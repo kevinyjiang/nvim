@@ -19,13 +19,13 @@ local setup = {
       text_objects = false, -- help for text objects triggered after entering an operator
       windows = true, -- default bindings on <c-w>
       nav = true, -- misc bindings to work with windows
-      z = true, -- bindings for folds, spelling and others prefixed with z
-      g = true, -- bindings for prefixed with g
+      z = false, -- bindings for folds, spelling and others prefixed with z
+      g = false, -- bindings for prefixed with g
     },
   },
   -- add operators that will trigger motion and text object completion
   -- to enable all native operators, set the preset / operators plugin above
-  operators = { gc = "Comments" },
+  -- operators = { gc = "Comments" },
   key_labels = {
     -- override the label used to display some keys. It doesn't effect WK in any other way.
     -- For example:
@@ -88,7 +88,8 @@ local mappings = {
   ["c"] = { "<cmd>bdelete!<CR>", "close" },
   ["h"] = { "<cmd>nohlsearch<CR>", "highlight off" },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "grep" },
-  ["P"] = { "<cmd>lua require('harpoon.cmd-ui').toggle_quick_menu()<cr>", "harpoon" },
+  ["P"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", "harpoon" },
+  ["a"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "add to harpoon" },
   ["?"] = { "<cmd>Telescope help_tags<cr>", "help" },
   --[[ p = { ]]
   --[[   name = "Packer", ]]
