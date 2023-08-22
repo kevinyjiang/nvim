@@ -37,7 +37,7 @@ db.setup({
         icon = "  ",
         desc = "search",
         desc_hl = "DashboardDesc",
-        key = "<C-p>",
+        key = "C-p",
         key_hl = "DashboardShortCut",
         action = "Telescope find_files theme=ivy"
       },
@@ -45,7 +45,7 @@ db.setup({
         icon = "  ",
         desc = "recent",
         desc_hl = "DashboardDesc",
-        key = "<C-r>",
+        key = "r",
         key_hl = "DashboardShortCut",
         action = "Telescope oldfiles theme=dropdown"
       },
@@ -53,9 +53,17 @@ db.setup({
         icon = "  ",
         desc = "grep",
         desc_hl = "DashboardDesc",
-        key = "<C-F>",
+        key = "C-F",
         key_hl = "DashboardShortCut",
         action = "Telescope live_grep"
+      },
+      {
+        icon = "  ",
+        desc = "harpoon",
+        desc_hl = "DashboardDesc",
+        key = "spc+tab",
+        key_hl = "DashboardShortCut",
+        action = "lua require('harpoon.ui').toggle_quick_menu()<cr>"
       },
       {
         icon = "󰒓  ",
