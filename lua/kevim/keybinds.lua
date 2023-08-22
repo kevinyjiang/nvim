@@ -26,11 +26,11 @@ map("v", "<", "<gv", opts)
 map("v", ">", ">gv", opts)
 
 -- don't overwrite delete register on paste over
-map("v", "<leader>p", '"_dP', opts)
+map("v", "p", '"_dP', opts)
 
 -- yank to system clipboard
-map("n", "<leader>y", '"+y', opts)
-map("v", "<leader>y", '"+y', opts)
+--[[ map("n", "<leader>y", '"+y', opts) ]]
+--[[ map("v", "<leader>y", '"+y', opts) ]]
 
 -- Visual Block --
 -- Move text up and down

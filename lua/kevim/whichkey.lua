@@ -92,14 +92,14 @@ local mappings = {
   ["P"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "pin" },
   ["?"] = { "<cmd>Telescope help_tags<cr>", "help" },
   ["m"] = { "<cmd>MinimapToggle<cr>", "minimap" },
-  --[[ p = { ]]
-  --[[   name = "Packer", ]]
-  --[[   c = { "<cmd>PackerCompile<cr>", "Compile" }, ]]
-  --[[   i = { "<cmd>PackerInstall<cr>", "Install" }, ]]
-  --[[   s = { "<cmd>PackerSync<cr>", "Sync" }, ]]
-  --[[   S = { "<cmd>PackerStatus<cr>", "Status" }, ]]
-  --[[   u = { "<cmd>PackerUpdate<cr>", "Update" }, ]]
-  --[[ }, ]]
+  p = {
+    name = "plugins",
+    c = { "<cmd>PackerCompile<cr>", "compile" },
+    i = { "<cmd>PackerInstall<cr>", "install" },
+    s = { "<cmd>PackerSync<cr>", "sync" },
+    S = { "<cmd>PackerStatus<cr>", "status" },
+    u = { "<cmd>PackerUpdate<cr>", "update" },
+  },
 
   --[[ g = { ]]
   --[[   name = "Git", ]]
@@ -137,15 +137,13 @@ local mappings = {
       "Workspace Symbols",
     },
   },
-  s = {
-    name = "more",
-    b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-    c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
-    M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-    r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-    R = { "<cmd>Telescope registers<cr>", "Registers" },
-    k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
-    C = { "<cmd>Telescope commands<cr>", "Commands" },
+  x = {
+    name = "extra",
+    c = { "<cmd>Telescope colorscheme<cr>", "colorscheme" },
+    m = { "<cmd>Telescope man_pages<cr>", "man pages" },
+    r = { "<cmd>Telescope oldfiles<cr>", "recent files" },
+    k = { "<cmd>Telescope keymaps<cr>", "keymaps" },
+    C = { "<cmd>Telescope commands<cr>", "commands" },
   },
 
   t = {
